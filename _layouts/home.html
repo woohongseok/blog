@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="hero">
+  <img class="hero-avatar" src="{{ '/assets/img/frieren-calm.jpg' | relative_url }}" alt="avatar">
+  <h1 class="hero-title">woohongseok</h1>
+  <p class="hero-desc">Dev Blog</p>
+</section>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
