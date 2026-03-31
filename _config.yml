@@ -3,7 +3,7 @@ description: "woohongseok's dev blog"
 baseurl: "/blog"
 url: "https://woohongseok.github.io"
 
-# google_analytics: G-XXXXXXXXXX
+google_analytics: G-N0LNG5VM0D
 
 plugins:
   - jekyll-feed
