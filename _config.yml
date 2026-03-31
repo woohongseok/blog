@@ -1,7 +1,11 @@
 title: woohongseok
 description: "woohongseok's dev blog"
-baseurl: ""
-url: ""
+baseurl: "/blog"
+url: "https://woohongseok.github.io"
+
+# google_analytics: G-XXXXXXXXXX
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
