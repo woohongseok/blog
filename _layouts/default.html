@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <div class="site-nav">
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </div>
+    </nav>
+  </header>
+  <main>{{ content }}</main>
+  <footer class="site-footer">&copy; {{ 'now' | date: '%Y' }} {{ site.title }}</footer>
+</body>
+</html>
